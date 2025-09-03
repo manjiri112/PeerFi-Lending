@@ -1,0 +1,276 @@
+/* General Body and Container Styles */
+body {
+  margin: 0;
+  /* Dark, sleek gradient for a modern feel */
+  background: linear-gradient(135deg, #161a29, #252b41);
+  color: #d1d5db; /* Light gray text for readability */
+  font-family: 'Inter', sans-serif; /* A professional sans-serif font */
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-container {
+  max-width: 1200px;
+  width: 95%;
+  margin: 1.5rem auto;
+  padding: 2.5rem;
+  /* Dark card background with a transparent quality */
+  background-color: rgba(26, 32, 44, 0.85);
+  border: 1px solid rgba(71, 85, 105, 0.5); /* Subtle border */
+  border-radius: 12px; /* Soft rounded corners */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); /* Deeper shadow for depth */
+}
+
+/* Header */
+.header {
+  border-bottom: 1px solid #4a5568;
+  padding-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  /* Vibrant, futuristic gradient for the main title */
+  background: linear-gradient(90deg, #3d8bff, #8a48ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #cbd5e0; /* Lighter heading color */
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+/* Wallet & Account Info */
+.wallet-connect, .account-info-container {
+  margin-bottom: 2.5rem;
+  padding: 1.2rem 1.8rem;
+  background-color: #2d3748; /* Darker background for info boxes */
+  border-left: 5px solid #48bb78; /* A green accent strip */
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+.wallet-connect .button {
+  width: fit-content;
+  margin: 0 auto;
+  display: block;
+}
+
+.account-address, .reputation-score {
+  font-family: 'Fira Code', monospace; /* Monospace font for a tech feel */
+  background-color: #4a5568;
+  padding: 0.4rem 0.7rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  color: #e2e8f0;
+  display: inline-block;
+}
+
+/* Buttons */
+.button {
+  /* Vibrant gradient for buttons */
+  background: linear-gradient(90deg, #48bb78, #38a169);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.8rem;
+  border-radius: 999px; /* Pill button shape */
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 10px rgba(56, 161, 105, 0.3);
+}
+
+.button:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 6px 14px rgba(56, 161, 105, 0.4);
+}
+
+.button:active {
+  transform: translateY(0);
+}
+
+.fund-button {
+  background: linear-gradient(90deg, #3d8bff, #487fff); /* Blue gradient for funding */
+  box-shadow: 0 4px 10px rgba(61, 139, 255, 0.3);
+}
+.fund-button:hover {
+  background: linear-gradient(90deg, #3070d6, #3b66d6);
+}
+
+.repay-button {
+  background: linear-gradient(90deg, #f56565, #e53e3e); /* Red gradient for repayment */
+  box-shadow: 0 4px 10px rgba(245, 101, 101, 0.3);
+}
+.repay-button:hover {
+  background: linear-gradient(90deg, #e53e3e, #d63030);
+}
+
+.request-button {
+  min-width: 150px;
+  background: linear-gradient(90deg, #805ad5, #b794f4); /* Purple gradient */
+  box-shadow: 0 4px 10px rgba(128, 90, 213, 0.3);
+}
+.request-button:hover {
+  background: linear-gradient(90deg, #6c4bbf, #a780e0);
+}
+
+/* Form */
+.form-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  max-width: 700px;
+  margin-bottom: 2.5rem;
+}
+
+.input-field {
+  flex-grow: 1;
+  padding: 0.9rem 1rem;
+  border: 1px solid #4a5568;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #e2e8f0;
+  background-color: #2d3748;
+  transition: all 0.25s ease;
+}
+
+.input-field::placeholder {
+  color: #a0aec0;
+}
+
+.input-field:focus {
+  border-color: #805ad5; /* Purple glow on focus */
+  box-shadow: 0 0 0 3px rgba(128, 90, 213, 0.25);
+  outline: none;
+}
+
+/* Loans Table */
+.table-responsive {
+  margin-top: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.loan-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0 12px;
+  background-color: #2d3748;
+  border-radius: 12px;
+}
+
+.loan-table thead {
+  background-color: #1a202c;
+}
+
+.loan-table th {
+  text-align: left;
+  color: #a0aec0;
+  font-weight: 600;
+  padding: 1.2rem 1rem;
+  border-bottom: 1px solid #4a5568;
+}
+
+.loan-table th:first-child {
+  border-top-left-radius: 12px;
+}
+.loan-table th:last-child {
+  border-top-right-radius: 12px;
+}
+
+.loan-table tbody tr {
+  background: #2d3748;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.loan-table tbody tr:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+.loan-table td {
+  padding: 1rem;
+  color: #e2e8f0;
+  border-bottom: 1px solid #4a5568;
+}
+
+.action-cell {
+  white-space: nowrap;
+  display: flex;
+  gap: 0.6rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .app-container {
+    padding: 2rem 1.5rem;
+  }
+  h1 {
+    font-size: 2.2rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    padding: 1.5rem 1rem;
+    margin: 1rem auto;
+  }
+  .form-container {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  .input-field, .request-button {
+    width: 100%;
+  }
+  .loan-table {
+    min-width: 550px;
+  }
+  .loan-table th, .loan-table td {
+    padding: 0.8rem 0.5rem;
+    font-size: 0.9rem;
+  }
+  .button {
+    padding: 0.7rem 1.4rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  .app-container {
+    padding: 1rem 0.8rem;
+  }
+  .loan-table {
+    min-width: 450px;
+  }
+  .loan-table th, .loan-table td {
+    padding: 0.6rem 0.4rem;
+    font-size: 0.8rem;
+  }
+  .action-cell .button {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+}
